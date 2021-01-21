@@ -35,7 +35,11 @@ input:valid {
   background-color: white;
 }
 
-
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 
 
@@ -168,7 +172,7 @@ header input {
   top: -100%;
   transition: .5s;
   word-spacing: 22em;
-  -webkit-appearance: none;
+
 }
 
 /* Hier geef ik een standaard aan waar elke image die niet apart wordt behandeld zich aan houd width van 100% zodat
