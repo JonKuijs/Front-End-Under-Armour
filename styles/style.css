@@ -35,9 +35,10 @@ input:valid {
   background-color: white;
 }
 
-input [type=tekst] [type=email] [type=submit] {
-  -webkit-appearance: none;
-}
+
+
+
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -167,6 +168,7 @@ header input {
   top: -100%;
   transition: .5s;
   word-spacing: 22em;
+  -webkit-appearance: none;
 }
 
 /* Hier geef ik een standaard aan waar elke image die niet apart wordt behandeld zich aan houd width van 100% zodat
