@@ -1,0 +1,1531 @@
+/* Hier zie je globalen css commands die voor de hele site gelden door * te gebruiken of html hier heb ik ervoor gezorgd dat
+de padding en margin op de hele pagina automatisch op 0 staat en het scroll behavior smooth is. Ook heb ik hier alle a elementen
+aangeroepen er voor gezorgd dat deze dan geen decoratie hebben en kleur het zelfde blijft. Ook heb ik de input hier gezet
+zodat elke form die niet correct is ingevuld rood wordt tot dat het goed is. Ook heb ik body gebruikt om ervoor te zorgen
+dat alle font hier in Roboto gebruikt (deze is opgeroepen uit google fonts in de html) en het backup font is sans-serif. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* bron valid/invalid form
+
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+
+*/
+input:invalid {
+  border: 1px solid black;
+  background-color: rgba(246, 131, 133, 1)
+}
+
+input:valid {
+  border: 1px solid black;
+  background-color: white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Hier onder is de CSS voor de header deze wordt gebruikt voor zowel de index.html als de detail.html de balangrijkste
+dingen die ik heb toegepast zijn flex box waar bij ik de icoontjes display flex heb gemaakt en een flex-grow heb gebruikt
+om ervoor te zorgen dat de nav bar zo komt te staan als hij hoort met het hamburger menu links logo in het midden en
+zoek icoontje en mandje rechts. Ook staat hier de css voor het uitklappen van het hamburger menu en de zoek balk. De
+belangrijkste css hier is het position absolute en left of top -100% om hem uit het scherm te laten verdwijnen. vervolgens
+is er een class aan gemaakt die dit weer op 0 zet om hem weer terug te krijgen maar die wordt aan geroepen door Javascripten
+en zal dus alleen dan van toepassing zijn.
+  */
+header {
+  border-bottom: 1px solid lightgrey;
+}
+
+header img {
+  height: 1.8em;
+}
+
+header ul:nth-of-type(1) {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5em;
+}
+
+header ul:nth-of-type(1) li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul:nth-of-type(1) li:first-of-type {
+  flex-grow: 0.3;
+  padding: 0;
+}
+
+header ul:nth-of-type(1) li:nth-of-type(2) {
+  align-items: center;
+  flex-grow: 1;
+}
+
+header ul:nth-of-type(1) li:nth-of-type(3) {
+  margin-right: .5em;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.uitklap {
+  left: 0 !important;
+  transition: .5s;
+}
+
+header ul:nth-of-type(2) {
+  position: absolute;
+  background-color: white;
+  left: -100%;
+  transition: .5s;
+  width: 80%;
+}
+
+header ul:nth-of-type(2) li {
+  padding: 1em;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(1) {
+  border-top: 1px solid black;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(2) {}
+
+header ul:nth-of-type(2) li:nth-of-type(3) {}
+
+header ul:nth-of-type(2) li:nth-of-type(4) {}
+
+header ul:nth-of-type(2) li:nth-of-type(5) {}
+
+header ul:nth-of-type(2) li:nth-of-type(6) {}
+
+header ul:nth-of-type(2) li:nth-of-type(7) {
+  background-color: lightgrey;
+  padding-left: 2.5em;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(8) {
+  background-color: lightgrey;
+  padding-left: 2.5em;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(9) {
+  background-color: lightgrey;
+  padding-left: 2.5em;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(10) {
+  background-color: lightgrey;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(11) {
+  background-color: lightgrey;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(12) {
+  background-color: lightgrey;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(13) {
+  background-color: lightgrey;
+}
+
+/* zoek balk uitklappenIk */
+.zoeken {
+  top: 0 !important;
+  transition: .5s;
+}
+
+header input {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: -100%;
+  transition: .5s;
+  word-spacing: 22em;
+}
+
+/* Hier geef ik een standaard aan waar elke image die niet apart wordt behandeld zich aan houd width van 100% zodat
+hij de hele pagina in beslag neemt en een height van 100% zodat hij nier vervormt raakt. */
+main img {
+  width: 100%;
+  height: auto;
+}
+
+/* section 1  Dit is de css voor section 1 van detail.html de css is erg standaard voor wordt er gespeeld met de
+grote van de tekst en de afstand tot de randen met behulp van de padding, font-size en text-align het lastigste is
+de box om  shop hoodies en shop joggingbroeken dit was mogelijk door borders er om heen te zetten en de juiste padding
+hier aan te geven.*/
+main section:nth-of-type(1) h2 {
+  font-size: 1em;
+  text-align: center;
+  padding: 1em;
+}
+
+main section:nth-of-type(1) h3 {
+  font-size: 1.4em;
+  max-width: 98%;
+  text-align: center;
+}
+
+main section:nth-of-type(1) p:nth-of-type(1) {
+  font-size: 1em;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding: 1em;
+}
+
+main section:nth-of-type(1) a p {
+  text-align: center;
+  border: 1px solid black;
+  padding: 2%;
+  margin: .5em;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+/* section 2  In section 2 was de tekst weer standaard gedaan met text-align en font-size ook zijn de li ongeveer het
+zelfde gestyld als de knoppen hier boven een border met padding er in en margin van elkaar. */
+main section:nth-of-type(2) h2 {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-style: normal;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 1.4em;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+main section:nth-of-type(2) ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-top: .5em;
+  font-size: .9em;
+  margin-bottom: 1.5em;
+}
+
+main section:nth-of-type(2) ul li {
+  border: 1px solid black;
+  justify-content: center;
+  flex-grow: 1;
+  width: 30%;
+  margin: .5em;
+  padding: .45em 1.2em;
+}
+
+/* sectoin 3 Hier is bijna het zelfde gedaan als in section 1 alleen 1 regel tekst minder die hier niet tussen stond. */
+main section:nth-of-type(3) h3 {
+  font-size: 1.4em;
+  text-align: center;
+  margin-left: .4em;
+  margin-right: .4em;
+  max-width: 95%;
+  padding-top: 1em;
+  padding-bottom: .5em;
+}
+
+main section:nth-of-type(3) p:nth-of-type(1) {
+  font-size: 1em;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 1em;
+}
+
+main section:nth-of-type(3) a p {
+  text-align: center;
+  border: 1px solid black;
+  padding: 2%;
+  margin-left: 23%;
+  margin-right: 23%;
+}
+
+/*section 4 precies het zelfde als section 3 */
+main section:nth-of-type(4) h3 {
+  font-size: 1.4em;
+  text-align: center;
+  margin-left: .4em;
+  margin-right: .4em;
+  max-width: 95%;
+  padding: .5em;
+}
+
+main section:nth-of-type(4) p:nth-of-type(1) {
+  font-size: 1em;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: .5em;
+}
+
+main section:nth-of-type(4) a p {
+  text-align: center;
+  border: 1px solid black;
+  padding: 2%;
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-bottom: 1em;
+}
+
+/* section 5 precies het zelfde als section 2 */
+main section:nth-of-type(5) h3 {
+  font-size: 1.4em;
+  text-align: center;
+  max-width: 98%;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+}
+
+main section:nth-of-type(5) ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: flex-start;
+  list-style-type: none;
+  font-size: .9em;
+}
+
+main section:nth-of-type(5) ul li {
+  border: 1px solid black;
+  justify-content: center;
+  flex-grow: 1;
+  width: 30%;
+  margin: .5em;
+  padding: .45em 1.2em;
+}
+
+/* section 6  Hier stijl ik meerdere ul en li maar omdat ze er hetzelfde uit moeten komen te zien kan ik ze allemaal in
+een keer stylen. Hier voor heb ik flexbox gebruikt met als belangrijkste een flex grow van 6 om het plusje aan het eind
+te krijgen. */
+main section:nth-of-type(6) {
+  margin-top: 2.5em;
+}
+
+main section:nth-of-type(6) a:visited {
+  color: inherit;
+}
+
+main section:nth-of-type(6) ul {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 0.1px solid darkgrey;
+  list-style: none;
+  background-color: lightgrey;
+  padding: .5em;
+}
+
+main section:nth-of-type(6) ul li:nth-of-type(1) {
+  flex-grow: 6;
+}
+
+main section:nth-of-type(6) ul li:nth-of-type(2) {
+  font-size: 1.2em;
+  color: darkgrey;
+}
+
+main section:nth-of-type(6) ul:nth-of-type(4) {
+  border-bottom: 0.1px solid darkgrey;
+}
+
+/* section 7 Dit was een lastige en heb ik dan ook voor een groot deel van inernet met dank aan de overflow-y hidden
+kun je niet meer vertical scrollen en door overflow-x scroll te maken kun je verticaal scrollen binnen de aangeroepen
+section. door white-space: nowrap komen de items naast elkaar te staan en vallen buiten de pagina waar door je er
+door heen kan scrollen.*/
+/*https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6*/
+.BT {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: .5em;
+}
+
+main section:nth-of-type(7) {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 4em;
+}
+
+main section:nth-of-type(7) div {
+  display: inline-block;
+}
+
+main section:nth-of-type(7) div p:nth-of-type(1) {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: .5em;
+}
+
+main section:nth-of-type(7) div p:nth-of-type(2) {
+  text-align: center;
+  font-weight: normal;
+  margin-top: .3em;
+}
+
+main section:nth-of-type(7) div p:nth-of-type(3) {
+  text-align: center;
+  font-weight: normal;
+  margin-top: .3em;
+}
+
+main section:nth-of-type(7) div img {}
+
+/* SECTION 8 Hier stijl ik het email formulier om het zo te krijgen hoe het nu is heb ik vooral met de width gespeeld
+van de inputs om ze naast elkaar te krijgen. met behulp van % te gebruiken hoopte ik het voor elk mobile device het
+zeflde te krijgen */
+main section:nth-of-type(8) {}
+
+main section:nth-of-type(8) h3 {
+  margin-left: 1em;
+  font-size: 1em;
+  margin-bottom: .7em;
+}
+
+main section:nth-of-type(8) form {
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+main section:nth-of-type(8) form input:nth-of-type(1) {
+  border: 1px solid black;
+  padding: 1em;
+  width: 55%;
+  margin: 0;
+  margin-left: 1em;
+}
+
+main section:nth-of-type(8) form input:nth-of-type(2) {
+  background-color: black;
+  border: 1px solid black;
+  padding: 1em;
+  width: 30%;
+  margin: 0;
+  color: white;
+}
+
+/*footer  De footer geld net als de header voor zowel de index.html als de detail.html het meest bijzondere dat ik hier
+heb gebruikt is word-spacing om zo de voorwarden uit elkaar te halen zonder dit in li te zetten en alsnog goed te kunnen
+centreren.*/
+footer {
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer img {
+  max-height: 2.5em;
+}
+
+footer ul li {
+  padding: 1em;
+}
+
+footer p:nth-of-type(1) {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+footer p:nth-of-type(2) {
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  word-spacing: 1em;
+  margin-bottom: 1em;
+}
+
+footer p:nth-of-type(3) {
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+footer p:nth-of-type(4) {
+  font-size: .7em;
+  color: grey;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+/* DETAIL PAGINA hier is de core css van de detail pagina aangeroepen door altijd te beginnen met .Detail */
+/* section 1D  Hier heb ik een ul met twee li's gebruikt omdeze naast elkaar te zetten de li's heb ik apart geselecteerd om zo
+verschillende achtergrond kleuren te kunnen toepassen. voor de rest is alles erg simpel met border en paddings vormgegeven
+ook heb ik list-style-type: none; gebruikt om de bullet points niet te laten zien. */
+.Detail section:nth-of-type(1) h1 {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.Detail section:nth-of-type(1) ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-top: .5em;
+  font-size: .7em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1.5em;
+}
+
+.Detail section:nth-of-type(1) ul li {
+  border: 1px solid black;
+  justify-content: flex-start;
+  flex-grow: 1;
+  width: 30%;
+  margin: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: .5em;
+}
+
+.Detail section:nth-of-type(1) ul li:nth-of-type(1) {
+  color: white;
+  background-color: black;
+}
+
+.Detail section:nth-of-type(1) h4 {
+  text-align: left;
+  font-size: 1em;
+  margin-left: 1em;
+  font-weight: normal;
+}
+
+/* section 2D Ik heb hier voor een background image gekozen zodat de anderen elementen er boven komen te staan
+ook neemt hij zo de hele section. hier op heb ik het form zo gestyld dat het naast elkaar komt te staan
+de eerste input heeft geen background color omdat deze wordt gegeven als hij valid of invalid is. */
+.Detail section:nth-of-type(2) {
+  background-image: url(../images/THEROCK.PNG);
+  margin: 1em;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: .5em;
+}
+
+.Detail section:nth-of-type(2) h1 {
+  margin-left: .5em;
+  font-size: 1em;
+}
+
+.Detail section:nth-of-type(2) form {
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.Detail section:nth-of-type(2) form input:nth-of-type(1) {
+  padding: .5em;
+}
+
+.Detail section:nth-of-type(2) form input:nth-of-type(2) {
+  background-color: rgba(76, 175, 80, 0);
+  border: 1px solid white;
+  padding: .5em;
+  color: white;
+}
+
+.Detail section:nth-of-type(2) h2 {
+  font-size: 1.5em;
+  color: white;
+}
+
+.Detail section:nth-of-type(2) h3 {
+  font-size: .7em;
+  color: white;
+  margin-top: -2em;
+}
+
+.Detail section:nth-of-type(3) ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: .7em;
+  margin-right: .7em;
+  list-style: none;
+  justify-content: space-around;
+}
+
+/* section 3D In section 3 staat heel veel css maar is vooral veel herhaald maar de css komt op het volgende neer
+alle li binnen section 3 hebben een max width van 45% zodat er twee naast elkaar passen deze worden ge flex-warp d
+zodat ze naast elkaar komen en als dat niet meer gaat er onder. .colorselectie is een class die per prodcut een ander
+getal achter hier wordt overflow hidden aan gegeven zodat je niet 2 images naast elkaar ziet staan. Wat het switchen
+mogelijk maakt is de regel #r01 (of een ander id dat is gegeven in de html) deze zegt dat als die button checked is
+dus aan geklikt komt de volgende css er over in dit geval margin-left -50% zodat hij switched naar de image die je met overflow
+hidden er naast hebt gezegd als je dan weer op de ander radio button klikt is het weer margin-left 0% zodat je elke
+keer als je een radio button checked onder de afbeelding hij veranderd naar de image die er naast staat.
+
+Dit wordt zo gedaan voor elk product dat hier onder volgt en zijn dus alleen de id's in de html anders en is het
+enige verschil de kleur van de knop en met wat je hem aan roept.*/
+/*PRODUCT 1*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(1) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(1) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(1) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(1) ul {
+  display: flex;
+  margin: 0;
+}
+
+.colorselectiep0 {
+  overflow: hidden;
+}
+
+.navigation0 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar0 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar0:nth-of-type(1) {
+  background-color: #E6E5E1;
+}
+
+.bar0:nth-of-type(2) {
+  background-color: #E6E5E1;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides0 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide0 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r01:checked~.s0 {
+  margin-left: 0;
+}
+
+#r0:checked~.s0 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 2*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(2) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(2) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(2) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep1 {
+  overflow: hidden;
+}
+
+.navigation {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar:nth-of-type(1) {
+  background-color: #232F41;
+}
+
+.bar:nth-of-type(2) {
+  background-color: #C0C6CB;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r1:checked~.s1 {
+  margin-left: 0;
+}
+
+#r2:checked~.s1 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 3*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(3) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(3) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(3) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+/* copypasta */
+.colorselectiep2 {
+  overflow: hidden;
+}
+
+.navigation2 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar2 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar2:nth-of-type(1) {
+  background-color: #282C2F;
+}
+
+.bar2:nth-of-type(2) {
+  background-color: #232F41;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides2 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide2 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r3:checked~.s2 {
+  margin-left: 0;
+}
+
+#r4:checked~.s2 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 4*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(4) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(4) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(4) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep3 {
+  overflow: hidden;
+}
+
+.navigation3 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar3 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar3:nth-of-type(1) {
+  background-color: #999999;
+}
+
+.bar3:nth-of-type(2) {
+  background-color: #203242;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides3 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide3 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r5:checked~.s2 {
+  margin-left: 0;
+}
+
+#r6:checked~.s2 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 5*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(5) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(5) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(5) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+/* copypasta */
+.colorselectiep4 {
+  overflow: hidden;
+}
+
+.navigation4 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar4 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar4:nth-of-type(1) {
+  background-color: #203242;
+}
+
+.bar4:nth-of-type(2) {
+  background-color: #282C2F;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides4 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide4 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r7:checked~.s4 {
+  margin-left: 0;
+}
+
+#r8:checked~.s4 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 6*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(6) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(6) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(6) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+/* copypasta */
+.colorselectiep5 {
+  overflow: hidden;
+}
+
+.navigation5 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar5 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar5:nth-of-type(1) {
+  background-color: #282C2F;
+}
+
+.bar5:nth-of-type(2) {
+  background-color: #232F41;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides5 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide5 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r9:checked~.s5 {
+  margin-left: 0;
+}
+
+#r10:checked~.s5 {
+  margin-left: -50%;
+}
+
+/* Tekst 1 */
+.Detail section:nth-of-type(3) ul li:nth-of-type(7) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(7) p:nth-of-type(1) {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(7) p:nth-of-type(2) {
+  text-align: left;
+  font-size: .65em;
+  font-weight: normal;
+}
+
+/*PRODUCT 7*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(8) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(8) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(8) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep6 {
+  overflow: hidden;
+}
+
+.navigation6 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar6 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar6:nth-of-type(1) {
+  background-color: #282C2F;
+}
+
+.bar6:nth-of-type(2) {
+  background-color: #203242;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides6 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide6 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r11:checked~.s6 {
+  margin-left: 0;
+}
+
+#r12:checked~.s6 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 8*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(9) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(9) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(9) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep7 {
+  overflow: hidden;
+}
+
+.navigation7 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar7 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar7:nth-of-type(1) {
+  background-color: #282C2F;
+}
+
+.bar7:nth-of-type(2) {
+  background-color: #232F41;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides7 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide7 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r13:checked~.s7 {
+  margin-left: 0;
+}
+
+#r14:checked~.s7 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 9*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(10) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(10) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(10) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep8 {
+  overflow: hidden;
+}
+
+.navigation8 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar8 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar8:nth-of-type(1) {
+  background-color: #A4B9C5;
+}
+
+.bar8:nth-of-type(2) {
+  background-color: #282C2F;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides8 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide8 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r15:checked~.s8 {
+  margin-left: 0;
+}
+
+#r16:checked~.s8 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 10*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(11) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(11) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(11) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep9 {
+  overflow: hidden;
+}
+
+.navigation9 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar9 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar9:nth-of-type(1) {
+  background-color: #282C2F;
+}
+
+.bar9:nth-of-type(2) {
+  background-color: #484535;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides9 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide9 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r17:checked~.s9 {
+  margin-left: 0;
+}
+
+#r18:checked~.s9 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 11*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(12) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(12) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(12) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep10 {
+  overflow: hidden;
+}
+
+.navigation10 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar10 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar10:nth-of-type(1) {
+  background-color: #282C2F;
+}
+
+.bar10:nth-of-type(2) {
+  background-color: #484535;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides10 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide10 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r19:checked~.s10 {
+  margin-left: 0;
+}
+
+#r20:checked~.s10 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 12*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(13) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(13) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(13) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep11 {
+  overflow: hidden;
+}
+
+.navigation11 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar11 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar11:nth-of-type(1) {
+  background-color: #2B657C;
+}
+
+.bar11:nth-of-type(2) {
+  background-color: #3B3E38;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides11 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide11 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r21:checked~.s11 {
+  margin-left: 0;
+}
+
+#r22:checked~.s11 {
+  margin-left: -50%;
+}
+
+/*PRODUCT 13*/
+.Detail section:nth-of-type(3) ul li:nth-of-type(14) {
+  max-width: 45%;
+  margin-bottom: 3em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(14) p:nth-of-type(1) {
+  text-align: center;
+  font-size: .7em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.Detail section:nth-of-type(3) ul li:nth-of-type(14) p:nth-of-type(2) {
+  text-align: center;
+  font-size: .7em;
+}
+
+.colorselectiep12 {
+  overflow: hidden;
+}
+
+.navigation12 {
+  position: relative;
+  bottom: .1em;
+  display: flex;
+}
+
+.bar12 {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+
+.bar12:nth-of-type(1) {
+  background-color: #203242;
+}
+
+.bar12:nth-of-type(2) {
+  background-color: #0098C3;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides12 {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.slide12 {
+  max-width: 50%;
+}
+
+.slide img {}
+
+#r23:checked~.s12 {
+  margin-left: 0;
+}
+
+#r24:checked~.s12 {
+  margin-left: -50%;
+}
+
+/* https://www.youtube.com/watch?v=Vef9bxTilCU scroll to top video*/
+/* Omhoog scroll knop  Hier is de knop vormgegeven door er de zelfde height en width aan te geven zodat het een
+vierkant wordt. en een border erom heen om het de knop de maken die het nu is. Alleen nog de image in het midden
+geplaatst door met de padding-top te spelen en een goeie grote te geven.*/
+.Detail section:nth-of-type(4) a {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: black 1px solid;
+  bottom: 1.5em;
+  right: 1em;
+  text-align: center;
+}
+
+.Detail section:nth-of-type(4) a img {
+  width: 25px;
+  padding-top: 10px;
+}

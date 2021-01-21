@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UnderArmour</title>
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+
+      <ul>
+        <li> <a id="hamburger"><img src="images/hamburger.png" alt="Hamburgermenu"></a></li>
+        <li> <a href="index.html" class="logo"><img src="images/logo.svg" alt="Underarmour logo"></a></li>
+        <li> <a id="vergrootglas"><img src="images/zoeken.png" alt="Zoek icoon"></a></li>
+        <li> <a href="index.html"><img src="images/mandje.png" alt="Winkelwagen icoon"></a></li>
+      </ul>
+
+
+      <input id="zoek" type="text" placeholder="Zoeken">
+
+
+      <!-- hulp van martijn met java gedeelte van uitklap menu-->
+      <ul id="menu">
+        <li>Nieuwe collectie </li>
+        <li>Schoenen </li>
+        <li>Heren </li>
+        <li>Dames </li>
+        <li>Kinderen </li>
+        <li>Outlet </li>
+        <li>LOCATIEWIJZIGEN </li>
+        <li>Nederlands</li>
+        <li>English</li>
+        <li>Winkelzoeker </li>
+        <li>Bestelling volgen </li>
+        <li>Contact </li>
+        <li>Bedrijfsinfo </li>
+      </ul>
+
+
+    </nav>
+  </header>
+
+  <!-- Main heb ik een class aangegeven zodat ik via css makkelijk een onderschijt kan maken tussen de index.html en detail.html
+door altijd te beginnen met .Detail als ik detail.html wil aanspreken en daarna gewoon de standaard aanspreek punten kan gebruiken voor css-->
+
+  <main class="Detail">
+    <section>
+      <h1>PROJECT ROCK-COLLECTIE</h1>
+      <ul>
+        <li><a href="">Filter op</a>
+        <li><a href="">Sorteren op</a></li>
+      </ul>
+      <h4>
+        93 resultaten
+      </h4>
+
+    </section>
+
+    <!-- In leiding van Project rock met een image die pas wordt toegevoegd in css en weer een email formulier met type email zodat
+de browsers automatisch weten dat je een @ moet gebruiken. -->
+
+    <section>
+      <h2>THROUGH THE WORK</h2>
+      <h3>Ontvang updates over Project Rock, koptelefoon, andere UA-innovaties en exclusieve aanbiedingen</h3>
+
+      <form action="#" id="form" method="GET">
+
+        <input type="email" id="email" placeholder="Email adres">
+
+
+        <input type="submit" value="MELD JE AAN">
+
+
+      </form>
+
+    </section>
+    <!-- Vanaf hier wordt de zelfde code 13 keer herhaald met ander ID en classes zo lopen de Input Id van 0 tot 24 en de class navigation en slide
+    van 0 tot 12  zodat je ze allemaal apart kan stylen. Er staan per div 2 images in omdeze uit eindelijk te kunnen switchen bij het klikken op radio
+  button. dit kan door dat je met de radio buttons als hij als de ene knop op checked staat zal dit de bij behorende css activeren.  -->
+    <section>
+      <ul>
+        <!--- product 1 -->
+        <li>
+          <div class=colorselectiep0>
+            <div class="slides0">
+              <input type="radio" name="r" id="r01" checked>
+              <input type="radio" name="r" id="r0">
+              <div class="slide0 s0">
+                <img src="images/PJR1.png" alt="Wit T-shirt korte mouwen">
+              </div>
+              <div class="slide0">
+                <img src="images/PJR1.png" alt="Wit T-shirt korte mouwen">
+              </div>
+            </div>
+            <div class="navigation0">
+              <label for="r01" class="bar0"></label>
+              <label for="r0" class="bar0"></label>
+            </div>
+          </div>
+
+
+          <p>Herenshirt Project Rock Break Through met korte mouwen</p>
+          <p>€ 35,00</p>
+        </li>
+
+        <!--- product 2 -->
+        <li>
+          <div class=colorselectiep1>
+            <div class="slides">
+              <input type="radio" name="r" id="r1" checked>
+              <input type="radio" name="r" id="r2">
+              <div class="slide s1">
+                <img src="images/PJR2.png" alt="Herenschoenen donkerblauw">
+              </div>
+              <div class="slide">
+                <img src="images/PJR2.1.png" alt="Herenschoenen wit/grijs">
+              </div>
+            </div>
+            <div class="navigation">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+            </div>
+          </div>
+
+          <p>Herentrainingsschoenen UA Project Rock 3</p>
+          <p>€ 140,00</p>
+        </li>
+
+        <!--- product 3 -->
+        <li>
+          <div class=colorselectiep2>
+            <div class="slides2">
+              <input type="radio" name="r" id="r3" checked>
+              <input type="radio" name="r" id="r4">
+              <div class="slide2 s2">
+                <img src="images/PJR3.png" alt="Sportjack blauw">
+              </div>
+              <div class="slide2">
+                <img src="images/PJR3.1.png" alt="Sportjack zwart">
+              </div>
+            </div>
+            <div class="navigation2">
+              <label for="r3" class="bar2"></label>
+              <label for="r4" class="bar2"></label>
+            </div>
+          </div>
+
+          <p>Herentrainingsjack Project Rock Knit</p>
+          <p>€ 70,00</p>
+        </li>
+
+        <!--- product 4 -->
+        <li>
+          <div class=colorselectiep3>
+            <div class="slides3">
+              <input type="radio" name="r" id="r5" checked>
+              <input type="radio" name="r" id="r6">
+              <div class="slide3 s3">
+                <img src="images/PJR4.png" alt="Damestrui grijs">
+              </div>
+              <div class="slide3">
+                <img src="images/PJR4.1.png" alt="Damestrui donkergroen">
+              </div>
+            </div>
+            <div class="navigation3">
+              <label for="r5" class="bar3"></label>
+              <label for="r6" class="bar3"></label>
+            </div>
+          </div>
+
+          <p>Damesshirt Project Rock Charged Cotton® Fleece met ronde hals</p>
+          <p>€ 70,00</p>
+        </li>
+
+        <!--- product 5 -->
+        <li>
+          <div class=colorselectiep4>
+            <div class="slides4">
+              <input type="radio" name="r" id="r7" checked>
+              <input type="radio" name="r" id="r8">
+              <div class="slide4 s4">
+                <img src="images/PJR5.png" alt="Damesbroek donkerblauw">
+              </div>
+              <div class="slide4">
+                <img src="images/PJR5.1.png" alt="Damesbroek zwart">
+              </div>
+            </div>
+            <div class="navigation4">
+              <label for="r7" class="bar4"></label>
+              <label for="r8" class="bar4"></label>
+            </div>
+          </div>
+
+          <p>Damesbroek Project Rock Charged Cotton® Fleece</p>
+          <p>€ 80,00</p>
+        </li>
+
+        <!--- product 6 -->
+        <li>
+          <div class=colorselectiep5>
+            <div class="slides5">
+              <input type="radio" name="r" id="r9" checked>
+              <input type="radio" name="r" id="r10">
+              <div class="slide5 s5">
+                <img src="images/PJR6.png" alt="Herentrui zondermouwen donkerblauw">
+              </div>
+              <div class="slide5">
+                <img src="images/PJR6.png" alt="Herentrui zondermouwen donkerblauw">
+              </div>
+            </div>
+            <div class="navigation5">
+              <label for="r9" class="bar5"></label>
+              <label for="r10" class="bar5"></label>
+            </div>
+          </div>
+
+          <p>Herenhoodie Project Rock Charged Cotton® zonder mouwen</p>
+          <p>€ 65,00</p>
+        </li>
+
+        <!-- tekst -->
+
+        <li>
+          <p>In samenwerking met Dwayne Johnson</p>
+          <p>Als je aan een iconische spierbundel denkt, dan denk je aan Dwayne Johnson. Deze
+            Acteur brengt onvermoeibaar de nodige uren door in de gym. De samenwerking tussen deze extreme
+            sportman en Under Armour is dus logisch.</p>
+
+
+          <!--- product 7 -->
+        <li>
+          <div class=colorselectiep6>
+            <div class="slides6">
+              <input type="radio" name="r" id="r11" checked>
+              <input type="radio" name="r" id="r12">
+              <div class="slide6 s6">
+                <img src="images/PJR7.1.png" alt="Herentraingsbroek zwart">
+              </div>
+              <div class="slide6">
+                <img src="images/PJR7.png" alt="Herentraingsbroek donkerblauw">
+              </div>
+            </div>
+            <div class="navigation6">
+              <label for="r11" class="bar6"></label>
+              <label for="r12" class="bar6"></label>
+            </div>
+          </div>
+
+          <p>Herentrainingsbroek Project Rock Knit</p>
+          <p>€ 65,00</p>
+        </li>
+
+        <!--- product 8 -->
+        <li>
+          <div class=colorselectiep7>
+            <div class="slides7">
+              <input type="radio" name="r" id="r13" checked>
+              <input type="radio" name="r" id="r14">
+              <div class="slide7 s7">
+                <img src="images/PJR8.1.png" alt="Damestanktop zwart">
+              </div>
+              <div class="slide7">
+                <img src="images/PJR8.png" alt="Damestanktop donkerblauw">
+              </div>
+            </div>
+            <div class="navigation7">
+              <label for="r13" class="bar7"></label>
+              <label for="r14" class="bar7"></label>
+            </div>
+          </div>
+
+          <p>Damestanktop Project Rock Perf</p>
+          <p>€ 25,00</p>
+        </li>
+
+        <!--- product 9 -->
+        <li>
+          <div class=colorselectiep8>
+            <div class="slides8 ">
+              <input type="radio" name="r" id="r15" checked>
+              <input type="radio" name="r" id="r16">
+              <div class="slide8 s8">
+                <img src="images/PJR9.png" alt="Damestrainingsschoenen lichtblauw">
+              </div>
+              <div class="slide8">
+                <img src="images/PJR9.1.png" alt="Damestrainingsschoenen zwart">
+              </div>
+            </div>
+            <div class="navigation8">
+              <label for="r15" class="bar8"></label>
+              <label for="r16" class="bar8"></label>
+            </div>
+          </div>
+
+          <p>Damestrainingsschoenen UA Project Rock 3</p>
+          <p>€ 140,00</p>
+        </li>
+
+        <!--- product 10 -->
+        <li>
+          <div class=colorselectiep9>
+            <div class="slides9 ">
+              <input type="radio" name="r" id="r17" checked>
+              <input type="radio" name="r" id="r18">
+              <div class="slide9 s9">
+                <img src="images/PJR10.png" alt="Herentrainingshandschoenen zwart">
+              </div>
+              <div class="slide9">
+                <img src="images/PJR10.png" alt="Herentrainingshandschoenen zwart">
+              </div>
+            </div>
+            <div class="navigation9">
+              <label for="r17" class="bar9"></label>
+              <label for="r18" class="bar9"></label>
+            </div>
+          </div>
+
+          <p>Herentrainingshandschoenen UA x Project Rock</p>
+          <p>€ 40,00</p>
+        </li>
+
+        <!--- product 11 -->
+        <li>
+          <div class=colorselectiep10>
+            <div class="slides10 ">
+              <input type="radio" name="r" id="r19" checked>
+              <input type="radio" name="r" id="r20">
+              <div class="slide10 s10">
+                <img src="images/PJR11.png" alt="Herentanktop zwart">
+              </div>
+              <div class="slide10">
+                <img src="images/PJR11.1.png" alt="Herentanktop donkergroen">
+              </div>
+            </div>
+            <div class="navigation10">
+              <label for="r19" class="bar10"></label>
+              <label for="r20" class="bar10"></label>
+            </div>
+          </div>
+
+          <p>Herentanktop Project Rock Mana</p>
+          <p>€ 25,00</p>
+        </li>
+
+        <!--- product 12 -->
+        <li>
+          <div class=colorselectiep11>
+            <div class="slides11 ">
+              <input type="radio" name="r" id="r21" checked>
+              <input type="radio" name="r" id="r22">
+              <div class="slide11 s11">
+                <img src="images/PJR12.png" alt="Herenshorts cyaan">
+              </div>
+              <div class="slide11">
+                <img src="images/PJR12.1.png" alt="Herenshorts donkergroen">
+              </div>
+            </div>
+            <div class="navigation11">
+              <label for="r21" class="bar11"></label>
+              <label for="r22" class="bar11"></label>
+            </div>
+          </div>
+
+          <p>Herenshorts Project Rock Charged Cotton® Fleece</p>
+          <p>€ 65,00</p>
+        </li>
+
+        <!--- product 13 -->
+        <li>
+          <div class=colorselectiep12>
+            <div class="slides12 ">
+              <input type="radio" name="r" id="r23" checked>
+              <input type="radio" name="r" id="r24">
+              <div class="slide12 s12">
+                <img src="images/PJR13.png" alt="Jongensshirt donkerblauw">
+              </div>
+              <div class="slide11">
+                <img src="images/PJR13.1.png" alt="Jongensshirt lichtblauw">
+              </div>
+            </div>
+            <div class="navigation12">
+              <label for="r23" class="bar12"></label>
+              <label for="r24" class="bar12"></label>
+            </div>
+          </div>
+
+          <p>Jongensshirt Project Rock HW met korte mouwen</p>
+          <p>€ 26,00</p>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- hier eindigt de herhaling van code van de producten en het switchen hier van -->
+
+
+    <!-- hier is de image die moet dienen als het pijltje die je omhoog naar de site brengt. Door het gebruik van #
+    scroll je doort het klikken op de image naar de bovenkant van de pagina. -->
+
+    <section>
+      <a href="#"><img src="images/up-arrow.svg" alt="pijltje omhoog"></a>
+    </section>
+
+
+  </main>
+
+  <!-- footer hier staat de footer waar onder de icoontje van de apps van underarmour en de gebruikelijke cookiebeleid in p gezet
+  omdat het niet een head is en niet van belang is voor de SEO -->
+
+  <footer>
+    <ul>
+      <li><a href=""><img src="images/footerfoto1.png" alt="MapMyFitness logo van underarmour"></a></li>
+      <li><a href=""><img src="images/footerfoto2.png" alt="Endomondo logo van underarmour"></a></li>
+      <li><a href=""><img src="images/footerfoto3.png" alt="MyFitnessPal logo van underarmour"></a></li>
+    </ul>
+
+    <p>'s Werelds grootste fitnesscommunity</p>
+    <p>Algemenevoorwaarden Privacybeleid</p>
+    <p>Cookiebeleid</p>
+    <p>© 2020 Under Armour, Inc. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <!-- Javascript onder aan ge zet zodat hij pas als laatste wordt gelezen en dus uitgevoerd-->
+
+  <script src="scripts/java.js"></script>
+</body>
+
+</html>
