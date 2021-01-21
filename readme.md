@@ -17,6 +17,32 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Herkansing
 
+zoals gedacht had ik een herkansing de feedback hier van was het volgende:
+
+-Html klopt niet; geen logische headings / geen alt tags / geen indentatie / geen comments / regel 68 / 76? / 
+Geen JS?
+-Geen surface plane?
+-1 pagina af?
+-Staat niet online?
+-Github proces updaten, ik wil per week meer info zien.. neem me mee in je proces
+
+Het was nogal fout gegaan en voor de herkansing ben ik dan ook bezig geweest met elk punt proberen op te lossen ik heb er voor gezorgd dat de surfaceplane in orde
+was de zoek balk klapt uit als je er op klikt en ook de forums worden nu rood als je geen geldig email hebt in gevuld en wordt weer wit als dit wel zo is. De Headings zouden nu moeten kloppen en er is dan ook nog maar 1 h1 per pagina elke image heeft een alt tekst en alles is voorzien van uitgebreiden comments. ook heb ik alles ge beautifyt zodat de indentatie ook goed moet zijn. En als laaste heb ik mijn website goed online gezet.
+
+de layout ziet het zelfde eruit als de foto's bij eindgesprek (week 7/8)
+
+hier zijn een paar foto's van de surface plane
+
+
+<img src="images/hamburgeruit.png" width="375px" alt="Eindgesprek surfaceplane foto">
+<img src="images/zoekuit.png" width="375px" alt="Eindgesprek surfaceplane foto">
+<img src="images/invalid.png" width="375px" alt="Eindgesprek surfaceplane foto">
+<img src="images/valid.png" width="375px" alt="Eindgesprek surfaceplane foto">
+<img src="images/omhooggaan.png" width="375px" alt="Eindgesprek surfaceplane foto">
+<img src="images/kleur1checked.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/kleur2checked.png" width="375px" alt="Eindgesprek pagina foto">
+
+
 ## Eindgesprek (week 7/8)
 
 Tijdens week de vakantie had ik aan front-end gemoeten dit heb ik alleen lang niet zoveel gedaan als nodig was het weekend voor dat de lessen weer begonnen moest dit nog allemaal gebeuren ik lever het werk in terwijl ik weet dat ik 2 delen van de surface plane niet heb ook is mijn github een rommel en snap ik er zelf ook niks meer van het grooste probleem javascript is wel gelukt en wat ik heb gedaan is redelijk goed gegaan (denk ik) ik ben simpel weg te laat begonnen en hoop goed advies te krijgen tijdens mijn eindgesprek. De reden dat dit allemaal niet zo goed liep is omdat ik in de vakantie mij er niet toe kon zetten om te beginnen.
@@ -27,16 +53,16 @@ De stijling van basis dingen gingen wel goed en als ik bezig was had ik er ook w
 
 **Screenshot(s):**
 
-<img src="images/eind1.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind2.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind3.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind4.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind5.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind6.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind7.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind8.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind9.png" width="375px" alt="Breakdown schets van underarmour">
-<img src="images/eind10.png" width="375px" alt="Breakdown schets van underarmour">
+<img src="images/eind1.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind2.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind3.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind4.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind5.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind6.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind7.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind8.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind9.png" width="375px" alt="Eindgesprek pagina foto">
+<img src="images/eind10.png" width="375px" alt="Eindgesprek pagina foto">
 
 
 
