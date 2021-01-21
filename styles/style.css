@@ -538,7 +538,7 @@ ook heb ik list-style-type: none; gebruikt om de bullet points niet te laten zie
 ook neemt hij zo de hele section. hier op heb ik het form zo gestyld dat het naast elkaar komt te staan
 de eerste input heeft geen background color omdat deze wordt gegeven als hij valid of invalid is. */
 .Detail section:nth-of-type(2) {
-  background-image: url('../images/THEROCK.PNG');
+  background-image: url('../images/THEROCK.png');
   margin: 1em;
   background-size: cover;
   padding-top: 80px;
