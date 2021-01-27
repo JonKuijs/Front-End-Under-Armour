@@ -41,9 +41,6 @@ input {
   appearance: none;
 }
 
-
-
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -159,7 +156,8 @@ header ul:nth-of-type(2) li:nth-of-type(13) {
   background-color: lightgrey;
 }
 
-/* zoek balk uitklappenIk */
+/* zoek balk uitklappen en inklappen deze werkt het zelfde als het hamburger menu alleen gaat hij omhoog en
+beneden en zijn er drie elementen die dit doen hier zijn dan ook extra variabelen aan het javascript gegeven*/
 .zoeken {
   top: 0 !important;
   transition: .5s;
@@ -172,7 +170,46 @@ header input {
   top: -100%;
   transition: .5s;
   word-spacing: 22em;
+}
 
+header ::placeholder {
+  padding-left: 3.5em;
+}
+
+.wegklikken {
+  top: 2.5% !important;
+  transition: .5s;
+}
+
+.kruisjeklik {
+  position: absolute;
+  top: -100%;
+  transition: .5s;
+  padding-left: 90%;
+  z-index: 10;
+}
+
+.kruisjeklik img {
+  width: 50%;
+  height: 50%;
+}
+
+.extrazoek {
+  position: absolute;
+  top: -100%;
+  transition: .5s;
+  padding-left: 5%;
+  z-index: 10;
+}
+
+.extrazoek img {
+  width: 20px;
+  height: 20px;
+}
+
+.decoratiezoek {
+  top: 2.5% !important;
+  transition: .5s;
 }
 
 /* Hier geef ik een standaard aan waar elke image die niet apart wordt behandeld zich aan houd width van 100% zodat
